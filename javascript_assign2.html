@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment2</title>
+	<script type="text/javascript">
+		
+		var hour = 6;
+		var minute = 25;
+		var period = "AM";
+		var typeofday = " ";
+		var whatTime = " ";
+		var new_hour = hour;
+		 
+		 var x = timer (hour, minute, period);
+
+		 function timer (hour, minute, period){
+
+		 	if (period == "AM"){
+		 		var typeofday = "in the morning";
+		 		// console.log(typeofday);
+		 	}
+		 	else if(period == "PM"){
+		 		var typeofday = "in the evening";
+		 		// console.log(typeofday);
+		 	}
+
+		 	if (minute < 30){
+		 		var whatTime = "It's just after";
+		 		var new_hour = hour;
+				// console.log(whatTime);
+			}
+			else if(minute > 30 ){
+				var whatTime = "It's almost";
+				var new_hour = hour + 1 
+			};
+
+			console.log(whatTime, new_hour, typeofday);
+		 }
+	
+
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
